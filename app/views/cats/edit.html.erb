@@ -1,0 +1,22 @@
+<h1>Editing a cat...</h1>
+<center>
+<form action="<%= cat_url(@cat)%>" method="POST">
+    <input type="hidden" name="_method" value="PATCH" >
+  <div class="form-group">
+    <label >Name</label><br>
+    <input type="text" name="cat[name]" value="<%= @cat.name %>">
+  </div>
+  <br>
+  <div class="form-group">
+    <label >Age</label><br>
+    <input type="text" name="cat[age]" value="<%= @cat.age %>">
+  </div>
+  <br>
+  <div class="form-group">
+    <label >Color</label><br>
+    <input type="text" name="cat[color]" value="<%= @cat.color %>">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Update Cat</button>
+</form>
+</center>

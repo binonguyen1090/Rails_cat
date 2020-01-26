@@ -1,0 +1,21 @@
+<h1>Creating a cat...</h1>
+<center>
+<form action="<%= cats_url %>" method="POST">
+  <div class="form-group">
+    <label >Name</label><br>
+    <input type="text" name="cat[name]">
+  </div>
+  <br>
+  <div class="form-group">
+    <label >Age</label><br>
+    <input type="text" name="cat[age]">
+  </div>
+  <br>
+  <div class="form-group">
+    <label >Color</label><br>
+    <input type="text" name="cat[color]">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Create Cat</button>
+</form>
+</center>
